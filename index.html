@@ -5,44 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cajero</title>
     <link rel="stylesheet" href="css/estilos.css">
+    
 </head>
 <body>
     <section id="todo">
         <section id="superior">
             <section id="pantalla">
+                <div class="Vista1" >
+                    <header id="m1" style="display: block;">
+
+                    <div id="saludo">
+                        <h1>BIENVENIDO AL BCP</h1> <br>
+                    <h2>INGRESE SU CONTRASEÑA</h2>
+                    </div>
+                    <input data-previous type="password" id="clave" >
+                    <p id="mensaje"></p>
+                    </header>
+                </div>
+                
+                <div class="Vista2">
+                    <header calss="titulo2" id="m2" style="display: none;">
+                        <h3 id="t_menu">Menu principal</h3>
+                        <div id="op_izquierda">
+                            <br>
+                            <p>RETIRO</p><br>
+                            <p>CONSULTAS</p><br>
+                            <p>OPERACIONES</p>
+                        </div>
+                        <div id="op_derecha">
+                            <p>TRANSFERENCIA</p><br>
+                            <P>ULTIMOS MOVIMIENTOS</P>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="Vista3">
+                    <header id="m3" style="display: none;">
+                       <h2 id="t">RETIRO</h2>
+                        <div id="r_derecha">
+                            <p>RETIRAR SOLES</p>
+                            <br>
+                            <p>CANCELAR</p>
+                        </div>
+                        <div id="op_izquierda">
+                            <br>
+                            <br>
+                            <p>RETIRAR DOLARES</p>
+                        </div>
+                    </header>
+                </div>
+
+                <div class="Vista4">
+                    <header id="m4" style="display: none;">
+                        <h2 id="t">RETIRO</h2>
+                        <div id="r_derecha">
+
+                            <p>S/.20</p><br>
+                            <p>S/.150</p><br>
+                            <p>S/.300</p>
+                        </div>
+                        <div id="op_izquierda">
+                            <br>
+                            
+                            <p>S/.100</p><br>
+                            <p>S/.200</p><br>
+                            <p>OTRAS CANTIDADES</p>
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista5">
+                    <header id="m5" style="display: none;">
+                        <h1 id="t2">INGRESAR MONTO A RETIRAR EN MULTIPLOS DE 10</h1>
+                        <input data-previous type="number"  id="retiro">
+                        <div id="oc_derecha">
+                            <p>CONFIRMAR</p><br>
+                            <p>CORREGIR</p><br>
+                            <p>CANCELAR</p>
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista6">
+                    <header id="m6" style="display: none;">
+                        <h1 id="t2">¿DESEA REALIZAR OTRA OPERACION?</h1>
+                        <div id="oc_derecha">
+                            <p>SI</p><br>
+                            <p>NO</p><br>
+                           
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista7">
+                    <header id="m7" style="display: none;">
+                        <h1 id="t2">GRACIAS POR USAR NUESTRO SISTEMA</h1> 
+                        <img src="/imagenes/g.jpeg" alt="" id="gato">  
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista8">
+                    <header id="m8" style="display: none;">
+                        <h1 id="t2" style="margin-left: 130px;">SALDO ACTUAL</h1> 
+                        <p id="msn"></p>
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista9">
+                    <header id="m9" style="display: none;">
+                        <h1 id="t2" style="margin-left:80px;">TRANSFERIR A UNA CUENTA</h1> 
+                        <div id="op_izquierda">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p>SOLES</p><br>
+                            <p>DOLARES</p><br>
+                           
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista10">
+                    <header id="m10" style="display: none;">
+                        <h1 id="t2" style="margin-left:80px;">ULTIMOS MOVIMIENTOS</h1> 
+                        <div id="op_izquierda">
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <p>MOSTRAR EN PANTALLA</p><br>
+                            <p>IMPRIMIR VAUCHER</p><br>
+                           
+                        </div>
+                    </header>
+                </div>
+                <div class="Vista11">
+                    <header id="m11" style="display: none;">
+                        <h1 id="t2">INGRESAR MONTO A RETIRAR TRANSFERIR</h1>
+                        <input data-previous type="number"  id="retiro">
+                        <div id="oc_derecha">
+                            <p>CONFIRMAR</p><br>
+                            <p>CORREGIR</p><br>
+                            <p>CANCELAR</p>
+                        </div>
+                    </header>
+                </div>
                 <section id="flechas">
                     <section id="izquierda">
-                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton"><br>
-                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton"><br>
-                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton"><br>
+                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton" id="boton1" onclick="boton1()"><br>
+                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton" id="boton2" onclick="boton2()"><br>
+                        <input type="image" src="/imagenes/flecha_izquierda.png" class="boton" id="boton3" onclick="boton3()"><b></b><br>
                     </section>
                     <section id="derecha">
-                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton"><br>
-                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton"><br>
-                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton"><br>
+                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton" id="boton4" onclick="boton4()"><b><br>
+                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton" id="boton5" onclick="boton5()"><b><br>
+                        <input type="image" src="/imagenes/flecha_derecha.png" class="boton" id="boton6" onclick="boton6()"><b><br>
                     </section>
                 </section>
             </section>
         </section>
         <nav id="inferior">
             <section id="botones">
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="submit" value="CANCEL" id="cancel">
+                <input type="button" value="1" onclick="add('1')">
+                <input type="button" value="2"onclick="add('2')">
+                <input type="button" value="3" onclick="add('3')">
+                <input type="button" value="CANCEL" id="cancel" onclick="cancelar()">
                 <br>
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="submit" value="CLEAR" id="clear">
+                <input type="button" value="4"onclick="add('4')">
+                <input type="button" value="5"onclick="add('5')">
+                <input type="button" value="6"onclick="add('6')">
+                <input type="button" value="CLEAR" id="clear" onclick="borrar(1)">
                 <br>
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="submit" value="OK" id="ok">
+                <input type="button" value="7"onclick="add('7')">
+                <input type="button" value="8"onclick="add('8')">
+                <input type="button" value="9"onclick="add('9')">
+                <input type="submit" value="OK" id="ok" onclick="ok()">
                 <br>
                 <input type="button" value="-">
-                <input type="button" value="0">
+                <input type="button" value="0" onclick="add('0')">
                 <input type="button" value=".">
                 <input type="submit" value="" id="none">
                 <br>
@@ -67,6 +204,6 @@
             </aside>
         </nav>
     </section>
-    
+    <script src="/js/script.js"></script>
 </body>
 </html>
